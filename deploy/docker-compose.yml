@@ -5,7 +5,7 @@
 #   1. NO host port publishing. All services talk over the internal compose
 #      network only. No DNS, no :80/:443, no public subdomain (gated/out of scope).
 #   2. Image tags PINNED for reproducibility (upstream floats :3 and clickhouse:latest).
-#      - langfuse web/worker: 3.201.1 (latest stable release as of deploy)
+#      - langfuse web/worker: 3.200.0 (latest stable release as of deploy; 3.201.1 not on Docker Hub)
 #      - clickhouse-server:  25.8 (langfuse requires >= 24.3)
 #      - postgres: 17, redis: 7 (matches upstream pins)
 #   3. Secret env vars have NO insecure inline defaults — they MUST be supplied via
